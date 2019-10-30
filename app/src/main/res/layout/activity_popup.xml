@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.apkglobal.login.PopupActivity">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:id="@+id/radioc">
+
+
+        <RadioButton
+            android:layout_width="180sp"
+            android:id="@+id/seekerc"
+            android:layout_height="wrap_content"
+            android:text="@string/seeker"
+
+            android:textColor="@color/colorAccent"/>
+        <RadioButton
+            android:layout_width="180sp"
+            android:text="@string/company"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/seekerc"
+            android:id="@+id/companyc"
+
+            android:textColor="@color/colorPrimary"
+            />
+    </RadioGroup>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/input1">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Send OTP"
+            android:onClick="sendsms"
+            android:background="@color/colorAccent"
+
+            android:id="@+id/btn_sendsms"/>
+        <EditText android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/hint_mobile"
+            android:inputType="text|phone"
+
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"/>
+
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Verify"
+            android:background="@color/colorAccent"
+            android:onClick="verify"
+
+            android:id="@+id/btn_otp"/>
+        <EditText android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_otp"
+            android:inputType="text|phone"
+
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"/>
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ProgressBar android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

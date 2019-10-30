@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.percent.PercentRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.apkglobal.login.JobActivity"
+    tools:showIn="@layout/activity_job"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <Button
+
+            android:id="@+id/job1"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="25%"
+
+            android:paddingTop="120sp"
+
+
+
+
+            android:layout_marginTop="70dp"
+            android:background="@drawable/engineer"
+            android:text="Engineering Jobs" />
+
+        <Button
+            android:id="@+id/job2"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="25%"
+            android:layout_marginTop="70dp"
+            android:paddingTop="120dp"
+
+            android:layout_toRightOf="@+id/job1"
+            android:background="@drawable/bpo"
+            android:text="BPO Jobs"
+            />
+
+        <Button
+            android:id="@+id/job3"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="25%"
+            android:layout_marginTop="40dp"
+            android:paddingTop="100sp"
+
+            android:layout_below="@id/job1"
+            android:text="Hr Jobs"
+            android:background="@drawable/hr"/>
+
+        <Button
+            android:id="@+id/job4"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="25%"
+            android:layout_marginTop="40dp"
+
+            android:layout_toRightOf="@id/job3"
+            android:paddingTop="100sp"
+
+            android:layout_below="@id/job2"
+            android:background="@drawable/account"
+            android:text="Accounting Job" />
+
+
+        <Button
+            android:id="@+id/job5"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="25%"
+            android:paddingTop="90sp"
+            android:layout_marginTop="40dp"
+           android:layout_below="@id/job3"
+
+
+            android:background="@drawable/software"
+            android:text="IT Software Jobs" />
+
+        <Button
+            android:id="@+id/job6"
+            app:layout_widthPercent="50%"
+            app:layout_heightPercent="25%"
+           android:layout_toRightOf="@id/job5"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/job4"
+            android:paddingTop="90sp"
+
+            android:background="@drawable/teaching"
+            android:text="Teaching Job" />
+    </android.support.percent.PercentRelativeLayout>
+
+
+

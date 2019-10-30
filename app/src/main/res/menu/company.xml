@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_profile1"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_action_profile"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_signout"
+        android:orderInCategory="200"
+
+        android:icon="@drawable/ic_action_logout"
+        android:title="LogOut"
+
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/btn_x"
+        android:orderInCategory="200"
+
+        android:icon="@drawable/ic_action_name"
+        android:title="Exit"
+
+        app:showAsAction="always"/>
+
+
+
+</menu>

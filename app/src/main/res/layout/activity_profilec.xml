@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apkglobal.login.ProfilecActivity">
+
+    <EditText
+        android:id="@+id/et_namec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Name"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/et_emailc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/et_datec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Designation"
+
+        android:maxLines="1" />
+
+
+    <EditText
+        android:id="@+id/et_qualificationc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+
+        android:maxLines="2" />
+    <EditText
+        android:id="@+id/phonec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile No."
+
+        android:maxLines="2" />
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Update" />
+
+
+
+</LinearLayout>

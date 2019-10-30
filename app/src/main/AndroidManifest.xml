@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apkglobal.login">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Job Portal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".PopupActivity" />
+        <activity
+            android:name=".JobActivity"
+            android:label="@string/title_activity_job"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RecuActivity"
+            android:label="@string/title_activity_recu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_setting" />
+        <activity
+            android:name=".EngineerActivity"
+            android:label="@string/title_activity_engineer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BpoActivity"
+            android:label="@string/title_activity_bpo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HrActivity"
+            android:label="@string/title_activity_hr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AccountActivity"
+            android:label="@string/title_activity_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ITActivity"
+            android:label="@string/title_activity_it"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TeacherActivity"
+            android:label="@string/title_activity_teacher"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FetchActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".company.CompanyActivity"
+            android:label="@string/title_activity_company"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".WorkActivity" />
+        <activity android:name=".company.EngineercActivity" />
+        <activity android:name=".company.JobcActivity" />
+        <activity android:name=".company.BpocActivity" />
+        <activity android:name=".company.HrcActivity" />
+        <activity android:name=".company.AccountcActivity" />
+        <activity android:name=".company.ItcActivity" />
+        <activity android:name=".company.TeachercActivity" />
+        <activity android:name=".ImagesActivity" />
+        <activity android:name=".ResumeActivity"></activity>
+        <activity android:name=".ProfilecActivity" />
+    </application>
+
+</manifest>
